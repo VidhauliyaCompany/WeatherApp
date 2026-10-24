@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+</head>
+<body class="theme-default">
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div id="fx"></div>
+  </div>
+
+  <main class="card">
+    <h1>🌤️ Weather</h1>
+
+    <form id="searchForm">
+      <input id="cityInput" type="text" placeholder="Search city..." autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message"></p>
+
+    <section id="result" class="hidden">
+      <h2 id="cityName"></h2>
+      <img id="icon" alt="weather icon" />
+      <div id="temp"></div>
+      <div id="desc"></div>
+
+      <div class="stats">
+        <div><span>💧 Humidity</span><b id="humidity"></b></div>
+        <div><span>💨 Wind</span><b id="wind"></b></div>
+        <div><span>🌡️ Feels like</span><b id="feels"></b></div>
+      </div>
+
+      <h3>5-Day Forecast</h3>
+      <div id="forecast"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
